@@ -72,7 +72,7 @@ setup(
     cmdclass={"test": PyTest},
     tests_require=[
         "doc8==1.1.1",
-        "pytest==7.4.1",
+        "pytest==9.0.3",
         "pytest-cov==4.1.0",
         "requests-mock==1.11.0",
         "types-six",
