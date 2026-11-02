@@ -72,7 +72,9 @@ setup(
     cmdclass={"test": PyTest},
     tests_require=[
         "doc8==1.1.1",
-        "pytest==9.0.3",
+        # Match requirements-dev.txt while retaining Python 3.8 and 3.9 support.
+        "pytest==8.3.5; python_version < '3.10'",
+        "pytest==9.0.3; python_version >= '3.10'",
         "pytest-cov==4.1.0",
         "requests-mock==1.11.0",
         "types-six",
